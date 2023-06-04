@@ -57,10 +57,12 @@ html {
     transition: all 0.3s linear;
 }
 
-.header a:hover,
-.footer a:hover {
-    transform: scale(1.05);
-    color: rgb(219, 169, 146);
+@media (hover: hover) and (pointer: fine) {
+    .header a:hover,
+    .footer a:hover {
+        transform: scale(1.05);
+        color: rgb(219, 169, 146);
+    }
 }
 
 .about-me {
@@ -113,13 +115,15 @@ html {
     transition: all 0.3s linear;
 }
 
-.about-me__info button:hover {
-    cursor: pointer;
+@media (hover: hover) and (pointer: fine) {
+    .about-me__info button:hover {
+        cursor: pointer;
 
-    border: 0.1rem solid rgb(219, 169, 146);
-    color: rgb(219, 169, 146);
+        border: 0.1rem solid rgb(219, 169, 146);
+        color: rgb(219, 169, 146);
 
-    transform: scale(1.05);
+        transform: scale(1.05);
+    }
 }
 
 .about-me__photo {
@@ -174,7 +178,7 @@ html {
 }
 
 .my-skills__skills-item.second-card,
-.my-contacts__contacts-item.second-card  {
+.my-contacts__contacts-item.second-card {
     background-color: rgb(219, 169, 146);
 }
 
@@ -235,7 +239,7 @@ html {
 
 .my-contacts__contacts-item button {
     width: 80%;
-    
+
     margin-top: 1rem;
     padding: 1rem;
     font-size: 1.2rem;
