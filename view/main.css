@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    max-width: 70rem;
+    margin: auto;
+    padding: 0rem 3rem 0rem 3rem;
+}
+
+.header,
+.footer {
+    padding: 1.5rem 0rem 1.5rem 0rem;
+
+    background-color: rgb(4, 33, 62);
+}
+
+.header {
+    border-bottom: 0.1rem solid white;
+}
+
+.header__container,
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+
+    font-weight: 600;
+    color: white;
+}
+
+.header__links-list,
+.footer__links-list {
+    display: flex;
+    gap: 2rem;
+
+    list-style: none;
+}
+
+.header a,
+.footer a {
+    display: block;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+
+    transition: all 0.3s linear;
+}
+
+.header a:hover,
+.footer a:hover {
+    transform: scale(1.05);
+    color: rgb(219, 169, 146);
+}
+
+.about-me {
+    padding: 3rem 0rem 3rem 0rem;
+
+    background-color: rgb(4, 33, 62);
+}
+
+.about-me__container {
+    display: flex;
+    align-items: center;
+
+    color: white;
+}
+
+.about-me__info {
+    width: 50%;
+}
+
+.about-me__info h1 {
+    font-size: 2rem;
+}
+
+.about-me__info p {
+    margin: 3rem 0rem 3rem 0rem;
+    font-size: 1.2rem;
+}
+
+.about-me__info button a {
+    display: block;
+    height: 100%;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.about-me__info button {
+    width: 100%;
+
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: white;
+    border-radius: 2.4rem;
+    background-color: rgb(4, 33, 62);
+    border: 0.1rem solid white;
+
+    transition: all 0.3s linear;
+}
+
+.about-me__info button:hover {
+    cursor: pointer;
+
+    border: 0.1rem solid rgb(219, 169, 146);
+    color: rgb(219, 169, 146);
+
+    transform: scale(1.05);
+}
+
+.about-me__photo {
+    margin-left: auto;
+}
+
+.about-me__photo img {
+    max-width: 25rem;
+    min-height: 25rem;
+
+    border-radius: 50%;
+}
+
+.my-skills,
+.my-contacts {
+    padding: 2rem 0rem 5rem 0rem;
+
+    background-color: rgb(235, 222, 213);
+}
+
+.my-skills h1,
+.my-projects h1,
+.my-contacts h1 {
+    display: block;
+    text-align: center;
+
+    margin-bottom: 2rem;
+
+    font-size: 2rem;
+}
+
+.my-skills__skills-list,
+.my-contacts__contacts-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+
+    list-style: none;
+}
+
+.my-skills__skills-item,
+.my-contacts__contacts-item {
+    width: calc((100% - 2rem) / 3);
+    text-align: center;
+    padding: 7rem 0rem 7rem 0rem;
+
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(4, 33, 62);
+}
+
+.my-skills__skills-item.second-card,
+.my-contacts__contacts-item.second-card  {
+    background-color: rgb(219, 169, 146);
+}
+
+.my-projects {
+    padding: 2rem 0rem 5rem 0rem;
+
+    color: white;
+    background-color: rgb(4, 33, 62);
+}
+
+.my-projects__projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.my-projects__projects-item {
+    display: flex;
+    align-items: center;
+}
+
+.my-projects__project-photo {
+    width: 70%;
+}
+
+.my-projects__project-photo.second-project {
+    text-align: right;
+}
+
+.my-projects__project-photo img {
+    width: 30rem;
+    height: 15rem;
+
+    object-fit: cover;
+}
+
+.my-projects__project-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.my-projects__projects-item.second-project {
+    flex-direction: row-reverse;
+}
+
+.my-contacts__contacts-item {
+    padding: 4.5rem 0rem 4.5rem 0rem;
+}
+
+.my-contacts__contacts-item a {
+    display: block;
+    height: 100%;
+
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.my-contacts__contacts-item button {
+    width: 80%;
+    
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+
+    color: black;
+    border-radius: 2rem;
+    background-color: rgb(235, 222, 213);
+    border: none;
+
+    transition: all 0.3s linear;
+}
+
+@media (min-width: 576px) and (max-width: 1024px) {
+    .container {
+        max-width: 35rem;
+        padding: 0rem 1.5rem 0rem 1.5rem;
+    }
+
+    .header,
+    .footer {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .header__container,
+    .footer__container {
+        align-items: center;
+    }
+
+    .header__links-list,
+    .footer__links-list {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .about-me__container {
+        flex-direction: column-reverse;
+    }
+
+    .about-me__photo {
+        margin: 0rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-me__photo img {
+        max-width: 20rem;
+        min-height: 20rem;
+    }
+
+    .about-me__info {
+        width: 100%;
+    }
+
+    .about-me__info h1 {
+        text-align: center;
+    }
+
+    .about-me__info p {
+        margin: 1.5rem 0rem 1.5rem 0rem;
+        text-align: center;
+    }
+
+    .my-skills__skills-list {
+        flex-direction: column;
+    }
+
+    .my-skills__skills-item {
+        width: 18rem;
+    }
+
+    .my-skills__skills-item.first-card {
+        align-self: flex-start;
+    }
+
+    .my-skills__skills-item.second-card {
+        margin-top: -6rem;
+    }
+
+    .my-skills__skills-item.third-card {
+        align-self: flex-end;
+        margin-top: -6rem;
+    }
+
+    .my-projects__projects-item,
+    .my-projects__projects-item.second-project {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+
+        text-align: center;
+    }
+
+    .my-projects__project-photo {
+        width: 100%;
+    }
+
+    .my-projects__project-photo.second-project {
+        text-align: center;
+    }
+
+    .my-projects__project-info {
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .my-projects__project-info h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .my-projects__project-info.second-project {
+        align-self: flex-end;
+        text-align: right;
+    }
+
+    .my-contacts__contacts-list {
+        flex-direction: column;
+    }
+
+    .my-contacts__contacts-item {
+        width: 18rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        max-width: 32rem;
+        padding: 0rem 1.5rem 0rem 1.5rem;
+    }
+
+    .header,
+    .footer {
+        padding: 1rem 0rem 1rem 0rem;
+    }
+
+    .header__container,
+    .footer__container {
+        align-items: center;
+    }
+
+    .header__links-list,
+    .footer__links-list {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .about-me {
+        padding: 1.5rem 0rem 3rem 0rem;
+    }
+
+    .about-me__container {
+        flex-direction: column-reverse;
+    }
+
+    .about-me__photo {
+        margin: 0rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .about-me__photo img {
+        max-width: 15rem;
+        min-height: 15rem;
+    }
+
+    .about-me__info {
+        width: 100%;
+    }
+
+    .about-me__info h1 {
+        text-align: center;
+    }
+
+    .about-me__info p {
+        margin: 1.5rem 0rem 1.5rem 0rem;
+        text-align: center;
+    }
+
+    .my-skills,
+    .my-projects,
+    .my-contacts {
+        padding: 1.5rem 0rem 4rem 0rem;
+    }
+
+    .my-skills h1,
+    .my-projects h1,
+    .my-contacts h1 {
+        margin-bottom: 1.5rem;
+    }
+
+    .my-skills__skills-list {
+        flex-direction: column;
+    }
+
+    .my-skills__skills-item {
+        width: 18rem;
+        padding: 5rem 0rem 5rem 0rem;
+    }
+
+    .my-projects__projects-list {
+        gap: 1.5rem;
+    }
+
+    .my-projects__projects-item,
+    .my-projects__projects-item.second-project {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+
+        text-align: center;
+    }
+
+    .my-projects__project-photo {
+        width: 100%;
+    }
+
+    .my-projects__project-photo.second-project {
+        text-align: center;
+    }
+
+    .my-projects__project-photo img {
+        width: 100%;
+    }
+
+    .my-projects__project-info {
+        align-self: flex-start;
+        text-align: left;
+    }
+
+    .my-projects__project-info h2 {
+        margin-bottom: 0.5rem;
+    }
+
+    .my-projects__project-info.second-project {
+        align-self: flex-end;
+        text-align: right;
+    }
+
+    .my-contacts__contacts-list {
+        flex-direction: column;
+    }
+
+    .my-contacts__contacts-item {
+        width: 18rem;
+        padding: 2.5rem 0rem 2.5rem 0rem;
+    }
+}
